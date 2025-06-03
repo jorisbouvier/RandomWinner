@@ -8,7 +8,7 @@ import shutil
 import math
 
 # --- CONFIGURATION ---
-FICHIER_EXCEL = "participants_test.xlsx"
+FICHIER_EXCEL = "participants.xlsx"
 LOGO_PATH = "logo.png"
 PRIX = [
     ("1er Prix", 150, (255, 215, 0)),    # Or plus vif
