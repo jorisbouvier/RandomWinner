@@ -8,14 +8,15 @@ import shutil
 import math
 
 # --- CONFIGURATION ---
-FICHIER_EXCEL = "participants.xlsx"
-LOGO_PATH = "logo.png"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+FICHIER_EXCEL = os.path.join(BASE_DIR, "participants.xlsx")
+LOGO_PATH = os.path.join(BASE_DIR, "logo.png")
+FRAME_DIR = os.path.join(BASE_DIR, "frames")
 PRIX = [
     ("1er Prix", 150, (255, 215, 0)),    # Or plus vif
     ("2e Prix", 100, (230, 230, 230)),   # Argent plus clair
     ("3e Prix",  50, (205, 127, 50))     # Bronze (déjà bien)
 ]
-FRAME_DIR = "frames"
 FPS = 30
 INTRO_DURATION = 5  # en secondes, affichera aussi un compte à rebours
 TIRAGE_DURATION = 10  # en secondes
@@ -214,7 +215,7 @@ frame_count = show_liste_finale(gagnants, frame_count)
 
 # --- GÉNÉRATION VIDÉO ---
 print("Génération de la vidéo...")
-output_file = "tirage.mp4"
+output_file = os.path.join(BASE_DIR, "tirage.mp4")
 subprocess.run([
     "ffmpeg", "-y", "-framerate", str(FPS), "-i",
     os.path.join(FRAME_DIR, "frame_%04d.png"),
