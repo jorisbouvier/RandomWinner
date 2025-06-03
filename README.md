@@ -36,7 +36,7 @@ Place ton fichier `.xlsx` dans le dossier. Puis lance :
 python3 Tirage/tirage_generate_video.py
 ```
 
-La vidéo sera générée dans le fichier `tirage_final.mp4`.
+La vidéo sera générée dans le fichier `tirage.mp4`.
 
 ---
 
