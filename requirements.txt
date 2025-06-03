@@ -1,2 +1,4 @@
 pygame
 openpyxl
+pandas
+numpy

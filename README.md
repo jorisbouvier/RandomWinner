@@ -11,11 +11,7 @@ Ce projet permet de générer une vidéo animée à partir d'un fichier Excel co
 
 ## Installation
 
-1. Clone ou télécharge ce repo :
-```bash
-git clone https://github.com/ton-compte/Tirage.git
-cd Tirage
-```
+1. Télécharger l'archive du projet :
 
 2. Crée un environnement virtuel :
 ```bash
@@ -37,7 +33,7 @@ brew install ffmpeg
 
 Place ton fichier `.xlsx` dans le dossier. Puis lance :
 ```bash
-python3 tirage_generate_video.py
+python3 Tirage/tirage_generate_video.py
 ```
 
 La vidéo sera générée dans le fichier `tirage_final.mp4`.
